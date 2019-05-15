@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,10 +172,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-bottom: 3px dashed rgba(83, 80, 80, 0.589);
+}
+header .nav-logo {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 10px;
+}
+header .nav-logo .nav-logo,
+header .nav-logo h2 {
+  font-size: 3.7rem;
+}
+header .nav-items {
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin-left: 1.2rem;
+  padding: 1rem;
+  color: #212529;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -198,7 +226,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -217,7 +245,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }

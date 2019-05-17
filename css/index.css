@@ -2,6 +2,15 @@
   display: flex;
   flex-flow: row wrap;
 }
+.btn {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: #117a8b;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,24 +181,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.navigation {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding-top: 2rem;
-  border-bottom: 3px dashed rgba(83, 80, 80, 0.589);
+  border-bottom: 2px dashed #c0c0c0;
 }
-header .nav-logo {
+.navigation .nav-logo {
   display: flex;
   flex-flow: row wrap;
   margin: 0 10px;
 }
-header .nav-logo .nav-logo,
-header .nav-logo h2 {
+.navigation .nav-logo .nav-logo,
+.navigation .nav-logo h2 {
   font-size: 3.7rem;
 }
-header .nav-items {
+.navigation .nav-items {
   font-size: 1.8rem;
   text-decoration: none;
   margin-left: 1.2rem;
@@ -223,6 +232,20 @@ header .nav-items {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.home header header,
+.home header h2 {
+  display: block;
+  margin: 2rem auto;
+}
+.home header p {
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content {
   padding-bottom: 30px;

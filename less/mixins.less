@@ -1,1 +1,26 @@
 // Mixins in here
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//Parametric Mixins
+.button(@padding, @align, @fontsize, @radius, @color) {
+  padding: @padding;
+  text-align: @align;
+  color: @main-bg;
+  font-size: @fontsize;
+  border-radius: @radius;
+  background-color: @color;
+  cursor: pointer;
+}
+
+.btn {
+  .button(10px, center, 2rem, 10px, darken(@eastern-blue, 10%));
+}
